@@ -78,8 +78,8 @@ function arrayMethodToLoop(numbers){
 	//Print the parameter that is being passed through the function
 	console.log(numbers);
 	//Use the forEach() method to add 5 to each value in the passed array
-	numbers.forEach(function(cat,index) {
-		index += 5;
+	numbers.forEach(function(currentValue,index,arr) {
+		arr[index] += 5;
 	});
 	//Return the changed array
 	return numbers;
